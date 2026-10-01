@@ -100,10 +100,10 @@ namespace InstanaTestApp
         protected void BtnTestCounter_Click(object sender, EventArgs e)
         {
             LogAction("Counter incremented");
-            var current = 0;
-            if (Application[CounterKey] != null && int.TryParse(Application[CounterKey].ToString(), out var val))
+            int current = 0;
+            if (Application[CounterKey] != null)
             {
-                current = val;
+                int.TryParse(Application[CounterKey].ToString(), out current);
             }
 
             current++;
