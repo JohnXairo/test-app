@@ -1,0 +1,1 @@
+<%@ Application CodeBehind="Global.asax.cs" Inherits="InstanaTestApp.Global" Language="C#" %>
